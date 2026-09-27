@@ -54,7 +54,7 @@ def clean(text):
     """Remove everything that states the answer instead of describing the problem:
     slash commands (/kind bug, /sig node), template headings (the bug template's
     headings alone say kind/bug), HTML comments, and very long bodies."""
-    text = re.sub(r"<!--.*?-->", "", text or "", flags=re.S)
+    text = re.sub(r"<!--.*?-->", "", (text or "").lstrip("\ufeff"), flags=re.S)
     text = re.sub(r"^\s*/[a-z][\w-]*.*$", "", text, flags=re.M | re.I)
     text = re.sub(r"^\s*#{1,6} .*$", "", text, flags=re.M)
     text = re.sub(r"\n{3,}", "\n\n", text).strip()
@@ -97,7 +97,8 @@ def decide(answers):
     # Each label routes on its own confidence: kind is often certain, priority rarely.
     routes = {}
     for name, c in confidence.items():
-        if c >= cfg["auto_apply"] and not flags.get("is_prompt_injection"):
+        may_apply = route[name].get("auto_apply", True) and not flags.get("is_prompt_injection")
+        if c >= cfg["auto_apply"] and may_apply:
             routes[name] = "auto-apply"
         elif c >= cfg["suggest"]:
             routes[name] = "suggest"

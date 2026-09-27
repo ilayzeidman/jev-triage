@@ -58,6 +58,7 @@ questions:
   priority:
     type: score
     label_prefix: priority/
+    auto_apply: false      # suggested, never applied: more confident = less right (see the eval)
     instructions: How urgently the maintainers should work on this issue
     criteria:              # lowest first
       backlog: Worth doing, but no one needs to work on it soon
