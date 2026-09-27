@@ -43,6 +43,6 @@ description per option. Descriptions matter: jev reads them as the criteria.
 
 - Kubernetes authors write `/kind bug` and `/sig node` in the body, and the bug template's
   headings alone say "bug". `triage.clean()` strips both; `python eval.py --raw` shows the gap.
-- Eval issues are recent (created since May 2026), so jev cannot have trained on them.
+- Eval issues are recent (created since May 2026) to make it less likely jev trained on them; TypeSafe does not publish a training cutoff.
 - An issue can carry several `sig/*` labels; a pick counts as right if it is any of them.
 - Ground truth for kind and SIG is mostly the author's own slash command, applied by a bot.
