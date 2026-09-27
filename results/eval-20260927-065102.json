@@ -1,0 +1,167 @@
+{
+  "at": "2026-09-27T06:51:02",
+  "raw": false,
+  "issues": 820,
+  "errors": 0,
+  "wall_s": 33.3,
+  "jev": {
+    "model": "jev-1.13.0",
+    "accuracy": {
+      "kind": {
+        "n": 636,
+        "accuracy": 0.81
+      },
+      "sig": {
+        "n": 715,
+        "accuracy": 0.862
+      },
+      "priority": {
+        "n": 144,
+        "accuracy": 0.417
+      }
+    },
+    "p50_ms": 390,
+    "p95_ms": 490,
+    "cost_per_1000_usd": 0.0926,
+    "routes": {
+      "auto-apply": 115,
+      "suggest": 447,
+      "system-two": 245,
+      "private": 13
+    },
+    "thresholds": {
+      "kind": {
+        "0.5": {
+          "coverage": 0.945,
+          "accuracy": 0.834
+        },
+        "0.6": {
+          "coverage": 0.89,
+          "accuracy": 0.848
+        },
+        "0.7": {
+          "coverage": 0.851,
+          "accuracy": 0.865
+        },
+        "0.8": {
+          "coverage": 0.802,
+          "accuracy": 0.873
+        },
+        "0.9": {
+          "coverage": 0.726,
+          "accuracy": 0.887
+        },
+        "0.95": {
+          "coverage": 0.659,
+          "accuracy": 0.895
+        }
+      },
+      "sig": {
+        "0.5": {
+          "coverage": 0.95,
+          "accuracy": 0.888
+        },
+        "0.6": {
+          "coverage": 0.899,
+          "accuracy": 0.907
+        },
+        "0.7": {
+          "coverage": 0.836,
+          "accuracy": 0.923
+        },
+        "0.8": {
+          "coverage": 0.768,
+          "accuracy": 0.942
+        },
+        "0.9": {
+          "coverage": 0.709,
+          "accuracy": 0.953
+        },
+        "0.95": {
+          "coverage": 0.652,
+          "accuracy": 0.964
+        }
+      },
+      "priority": {
+        "0.5": {
+          "coverage": 0.854,
+          "accuracy": 0.407
+        },
+        "0.6": {
+          "coverage": 0.688,
+          "accuracy": 0.404
+        },
+        "0.7": {
+          "coverage": 0.528,
+          "accuracy": 0.408
+        },
+        "0.8": {
+          "coverage": 0.292,
+          "accuracy": 0.381
+        },
+        "0.9": {
+          "coverage": 0.062,
+          "accuracy": 0.222
+        },
+        "0.95": {
+          "coverage": 0.014,
+          "accuracy": 0.5
+        }
+      }
+    }
+  },
+  "subset": {
+    "n": 200,
+    "jev": {
+      "kind": {
+        "n": 159,
+        "accuracy": 0.805
+      },
+      "sig": {
+        "n": 174,
+        "accuracy": 0.856
+      },
+      "priority": {
+        "n": 44,
+        "accuracy": 0.455
+      }
+    },
+    "claude": {
+      "accuracy": {
+        "kind": {
+          "n": 159,
+          "accuracy": 0.818
+        },
+        "sig": {
+          "n": 174,
+          "accuracy": 0.856
+        },
+        "priority": {
+          "n": 44,
+          "accuracy": 0.477
+        }
+      },
+      "p50_ms": 12031,
+      "p95_ms": 19713,
+      "cost_per_1000_usd": 24.24,
+      "malformed": 1
+    },
+    "cascade": {
+      "accuracy": {
+        "kind": {
+          "n": 159,
+          "accuracy": 0.811
+        },
+        "sig": {
+          "n": 174,
+          "accuracy": 0.862
+        },
+        "priority": {
+          "n": 44,
+          "accuracy": 0.432
+        }
+      },
+      "escalated_share": 0.32
+    }
+  }
+}

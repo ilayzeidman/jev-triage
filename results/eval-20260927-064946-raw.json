@@ -1,0 +1,113 @@
+{
+  "at": "2026-09-27T06:49:46",
+  "raw": true,
+  "issues": 820,
+  "errors": 0,
+  "wall_s": 32.8,
+  "jev": {
+    "model": "jev-1.13.0",
+    "accuracy": {
+      "kind": {
+        "n": 636,
+        "accuracy": 0.863
+      },
+      "sig": {
+        "n": 715,
+        "accuracy": 0.909
+      },
+      "priority": {
+        "n": 144,
+        "accuracy": 0.424
+      }
+    },
+    "p50_ms": 381,
+    "p95_ms": 470,
+    "cost_per_1000_usd": 0.0954,
+    "routes": {
+      "auto-apply": 174,
+      "suggest": 438,
+      "system-two": 195,
+      "private": 13
+    },
+    "thresholds": {
+      "kind": {
+        "0.5": {
+          "coverage": 0.964,
+          "accuracy": 0.883
+        },
+        "0.6": {
+          "coverage": 0.931,
+          "accuracy": 0.889
+        },
+        "0.7": {
+          "coverage": 0.887,
+          "accuracy": 0.899
+        },
+        "0.8": {
+          "coverage": 0.844,
+          "accuracy": 0.911
+        },
+        "0.9": {
+          "coverage": 0.785,
+          "accuracy": 0.92
+        },
+        "0.95": {
+          "coverage": 0.714,
+          "accuracy": 0.927
+        }
+      },
+      "sig": {
+        "0.5": {
+          "coverage": 0.966,
+          "accuracy": 0.928
+        },
+        "0.6": {
+          "coverage": 0.938,
+          "accuracy": 0.939
+        },
+        "0.7": {
+          "coverage": 0.905,
+          "accuracy": 0.946
+        },
+        "0.8": {
+          "coverage": 0.873,
+          "accuracy": 0.952
+        },
+        "0.9": {
+          "coverage": 0.821,
+          "accuracy": 0.961
+        },
+        "0.95": {
+          "coverage": 0.773,
+          "accuracy": 0.975
+        }
+      },
+      "priority": {
+        "0.5": {
+          "coverage": 0.889,
+          "accuracy": 0.414
+        },
+        "0.6": {
+          "coverage": 0.771,
+          "accuracy": 0.432
+        },
+        "0.7": {
+          "coverage": 0.667,
+          "accuracy": 0.417
+        },
+        "0.8": {
+          "coverage": 0.375,
+          "accuracy": 0.463
+        },
+        "0.9": {
+          "coverage": 0.076,
+          "accuracy": 0.545
+        },
+        "0.95": {
+          "coverage": 0.021,
+          "accuracy": 1.0
+        }
+      }
+    }
+  }
+}

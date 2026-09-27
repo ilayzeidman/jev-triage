@@ -1,0 +1,13 @@
+820 issues in 33 s, 0 errors
+jev  p50 390 ms  p95 490 ms  $0.0926 per 1,000 issues
+  kind      81.0% of 636
+  sig       86.2% of 715
+  priority  41.7% of 144
+  routes {'auto-apply': 115, 'suggest': 447, 'system-two': 245, 'private': 13}
+
+on 200 issues:        jev     claude  cascade
+  kind                  80.5%   81.8%   81.1%
+  sig                   85.6%   85.6%   86.2%
+  priority              45.5%   47.7%   43.2%
+  claude p50 12031 ms  $24.24 per 1,000 (API list price)  1 malformed;  cascade escalates 32%
+wrote results/eval-20260927-065102.json
